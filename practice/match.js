@@ -4,7 +4,7 @@ const urlencode = require('urlencode');
 
 // summoner api
 var idname = "vlrhsgody";
-var key = "RGAPI-fc4f40c5-467a-49ee-a95e-f2e611e2c9e5";
+var key;
 var idUrl = "https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + urlencode(idname) + "?api_key=" + key;
 
 request(idUrl, function(error, response, body) {
